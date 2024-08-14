@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Venta de Beats</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 class="tituloSaludo">Bienvenido a la mejor plataforma de beats!</h1>
+    <div id="nombre-input">
+      <label for="nombre">Ingresa tu nombre:</label>
+      <input type="text" id="nombre" placeholder="Ingresa tu nombre" />
+      <button onclick="ingresarNombre()">Enviar</button>
+    </div>
+
+    <div id="saludo"></div>
+    <div id="generos-disponibles"></div>
+
+    <div id="genero-input" style="display: none">
+      <label for="genero">Selecciona un género:</label>
+      <input type="text" id="genero" placeholder="Introduce un género" />
+      <button onclick="explorarBeats()">Explorar Beats</button>
+    </div>
+
+    <div id="beats"></div>
+    <div id="carrito-items"></div>
+
+    <button
+      id="finalizar-compra"
+      style="display: none"
+      onclick="finalizarCompra()"
+    >
+      Finalizar Compra
+    </button>
+
+    <script src="index.js"></script>
+  </body>
+</html>
